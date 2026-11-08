@@ -1,0 +1,41 @@
+{
+  "applicationId": "com.rainbow.priceperuse",
+  "versionName": "1.5",
+  "versionCode": 10,
+  "date": "2026-11-08",
+  "root_workflow": "worthbit-create-upload-key-once",
+  "sdk_packages": [
+    "platforms;android-36",
+    "build-tools;35.0.0"
+  ],
+  "tests": 16,
+  "test_failures": 0,
+  "lint": "PASS (warnings retained)",
+  "clean_checkout_signed_release": "PASS with disposable test key; key and bundle deleted",
+  "release_without_signing": "REFUSED as expected",
+  "helper_checks": "PASS: YAML/bash, required secrets, permissions 600, no overwrite, Java Properties Unicode/special characters, sdkmanager revision selection, signed/unsigned/universal/four-ABI/partial-ABI/private-file fixtures, provenance-marker rejection",
+  "authoring_metadata": "Source checkout and packaged resources checked; launcher PNG has only IHDR/IDAT/IEND chunks",
+  "git": "Repository initialized; tracked and untracked non-ignored prospective commit files audited",
+  "cloud_build": "NOT_RUN",
+  "production_upload_key_generation": "NOT_RUN; configured for Codemagic only",
+  "play_upload": "NOT_RUN",
+  "logs_sha256": {
+    "worthbit-ci-gradle.log": "4d346ec6ee024d4d736d754825a2a38c2335f9bbea4ff425bb7ac581857e06bc",
+    "worthbit-clean-release.log": "f44ab2d21695ee9da6852195e5016c0a5b1d4d2d2877f9e61f3f9b7a59ee8b72",
+    "worthbit-helper-validation.log": "4591ef4c2c9a4ea82f216b9a86636324b98ab963de5cd092ccb431137a92446b"
+  },
+  "publisher_update": {
+    "date": "2026-11-08",
+    "locales": [
+      "en",
+      "it"
+    ],
+    "privacy_contact": "Company, postal address, email and telephone supplied by publisher",
+    "website": "https://nivorixa.info/",
+    "build_tests_lint": "PASS, 16 tests",
+    "ui": "PASS Android 5.0.2, 320dp, both languages; screenshots in screens/publisher (excluded from Git)",
+    "apk_contents_audit": "PASS",
+    "note": "Earlier clean signed AAB validation predates this text/link update; cloud build still NOT_RUN",
+    "policy_contact_position": "Last section, after Changes / Modifiche, in both languages"
+  }
+}
