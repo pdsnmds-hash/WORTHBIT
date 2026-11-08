@@ -83,6 +83,10 @@ def package():
  run(JDK/'bin/java','-jar',TOOLS/'lib/apksigner.jar','sign','--ks',BUILD/'debug.keystore','--ks-pass','pass:android','--out',WORK/'compat.apk',WORK/'compat-aligned.apk')
  adb('install','--no-incremental','-r',WORK/'compat.apk')
 
+device_api=int(sh('getprop','ro.build.version.sdk').decode().strip())
+required_api=int(re.search(r'minSdk\s*=\s*(\d+)',(ROOT/'app/build.gradle.kts').read_text()).group(1))
+if device_api<required_api:
+ raise SystemExit(f'This build requires API {required_api}+; selected emulator runs API {device_api}. Use a supported emulator.')
 package()
 settings_names=['animator_duration_scale','transition_animation_scale','window_animation_scale']
 settings_before={key:sh('settings','get','global',key).decode().strip() for key in settings_names}

@@ -1,7 +1,7 @@
 {
   "applicationId": "com.rainbow.priceperuse",
   "versionName": "1.5",
-  "versionCode": 10,
+  "versionCode": 11,
   "date": "2026-11-08",
   "root_workflow": "worthbit-create-upload-key-once",
   "sdk_packages": [
@@ -11,7 +11,7 @@
   "tests": 16,
   "test_failures": 0,
   "lint": "PASS (warnings retained)",
-  "clean_checkout_signed_release": "PASS with disposable test key; key and bundle deleted",
+  "clean_checkout_signed_release": "PASS for build 10; signed build 11 is to be run in Codemagic",
   "release_without_signing": "REFUSED as expected",
   "helper_checks": "PASS: YAML/bash, required secrets, permissions 600, no overwrite, Java Properties Unicode/special characters, sdkmanager revision selection, signed/unsigned/universal/four-ABI/partial-ABI/private-file fixtures, provenance-marker rejection",
   "authoring_metadata": "Source checkout and packaged resources checked; launcher PNG has only IHDR/IDAT/IEND chunks",
@@ -37,5 +37,24 @@
     "apk_contents_audit": "PASS",
     "note": "Earlier clean signed AAB validation predates this text/link update; cloud build still NOT_RUN",
     "policy_contact_position": "Last section, after Changes / Modifiche, in both languages"
+  },
+  "baseline_validation_versionCode": 10,
+  "minSdk": 24,
+  "minimum_sdk_update": {
+    "minSdk": 24,
+    "minimum_android": "7.0",
+    "versionName": "1.5",
+    "versionCode": 11,
+    "targetSdk": 36,
+    "local_debug_build": "PASS",
+    "unit_tests": "16 PASS",
+    "lint": "PASS; no errors",
+    "apk_manifest": "Verified minSdk24, target36, code11",
+    "runtime_smoke": "PASS Android 17 / API37; installed over existing debug build, user data preserved",
+    "api24_device_test": "NOT RUN: no API24 emulator installed",
+    "private_files_and_authoring_markers": "PASS",
+    "cloud_build_11": "NOT RUN",
+    "signing_identity": "Unchanged: worthbit_upload",
+    "note": "Earlier Android 5 screenshots/results refer to build 10. Build 11 requires Android 7.0+."
   }
 }

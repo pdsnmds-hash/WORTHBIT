@@ -10,7 +10,7 @@ val releaseProperties = Properties().apply {
 android {
     namespace = "com.rainbow.priceperuse"
     compileSdk = 36
-    defaultConfig { applicationId = "com.rainbow.priceperuse"; minSdk = 21; targetSdk = 36; versionCode = 10; versionName = "1.5"
+    defaultConfig { applicationId = "com.rainbow.priceperuse"; minSdk = 24; targetSdk = 36; versionCode = 11; versionName = "1.5"
         ndk { abiFilters += setOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64") } }
     signingConfigs {
         if (releasePropertiesFile.isFile) {

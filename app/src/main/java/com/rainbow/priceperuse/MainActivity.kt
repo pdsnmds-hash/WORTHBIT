@@ -161,7 +161,7 @@ class MainActivity : Activity() {
         (getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).hideSoftInputFromWindow(root.windowToken,0)
         clearFields();page=destination;menu=false;deleting=false;scroll=scroll.coerceIn(0f,kotlin.math.max(0f,items.size*122f-445f));world.invalidate()
     }
-    // API 33+ uses the registered platform callback; this override serves API 21–32.
+    // API 33+ uses the registered platform callback; this override serves API 24–32.
     @android.annotation.SuppressLint("GestureBackNavigation")
     @Deprecated("Activity back handling") override fun onBackPressed() {handleBack()}
     private fun handleBack() {
@@ -602,7 +602,7 @@ class MainActivity : Activity() {
             }
             row(t("About the app","Informazioni sull’app"),436f){showInformation(t("About WorthBit","Informazioni su WorthBit"),AppInformation.about(language=="it"))}
             row(t("Privacy policy","Informativa sulla privacy"),513f){showInformation(t("Privacy policy","Informativa sulla privacy"),AppInformation.privacy(language=="it"))}
-            row(t("Version ","Versione ")+appVersion,590f){showInformation(t("App version","Versione dell’app"),"WorthBit"+"\n\n"+t("Version ","Versione ")+appVersion+"\nAndroid 5.0+\n\n"+t("Works offline · 30 icons · 3 themes","Funziona offline · 30 icone · 3 temi"))}
+            row(t("Version ","Versione ")+appVersion,590f){showInformation(t("App version","Versione dell’app"),"WorthBit"+"\n\n"+t("Version ","Versione ")+appVersion+"\nAndroid 7.0+\n\n"+t("Works offline · 30 icons · 3 themes","Funziona offline · 30 icone · 3 temi"))}
             panel(60f,668f,240f,32f,palette.selected)
             text(t("Replay introduction","Rivedi l’introduzione"),180f,691f,19f,center=true,max=224f)
             hit(55f,662f,250f,44f){openOnboarding(true)}

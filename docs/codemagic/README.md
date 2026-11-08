@@ -1,6 +1,6 @@
 # WorthBit — подпись в Codemagic
 
-Приложение: com.rainbow.priceperuse, модуль app, версия 1.5 / code 10, minSdk 21, compileSdk/targetSdk 36, Java 17. VersionCode перед загрузкой увеличивают, если 10 уже использован в Play. SDK и идентификатор при настройке CI не менялись.
+Приложение: com.rainbow.priceperuse, модуль app, версия 1.5 / code 11, minSdk 24, compileSdk/targetSdk 36, Java 17. VersionCode перед загрузкой увеличивают, если 11 уже использован в Play. Compile/target SDK и идентификатор сохранены. В build 11 minSdk поднят до 24 для требования Automatic protection; минимальная версия Android — 7.0.
 
 ## 1. Одноразовый ключ
 

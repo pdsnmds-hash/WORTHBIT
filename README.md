@@ -1,9 +1,9 @@
 # WorthBit
 
-Android application for tracking the cost per use of belongings. Native Kotlin, Android 5.0+ (API 21), English and Italian.
+Android application for tracking the cost per use of belongings. Native Kotlin, Android 7.0+ (API 24), English and Italian.
 
 - Application ID: `com.rainbow.priceperuse`
-- Version: `1.5` (`versionCode` 10)
+- Version: `1.5` (`versionCode` 11)
 - Compile SDK: 36; target SDK: 36
 
 ## Build
@@ -48,7 +48,7 @@ The structural-change snapshot, declaration comparison, metadata comparison and 
 
 Gradle 8.14.6, AGP 8.13.2, Kotlin 2.3.21, annotations 26.1.0 and JUnit 4.13.2. Fragment is not a dependency. Universal DEX supports armeabi-v7a, arm64-v8a, x86 and x86_64; there are no native libraries.
 
-Compatibility checks and emulator screenshots are recorded in `docs/compatibility/REPORT.md`. `scripts/qa/compatibility.py` checks isolated test data, English and Italian layouts at 411, 380 and 320 dp, and Android 5 compatibility.
+Compatibility checks and emulator screenshots are recorded in `docs/compatibility/REPORT.md`. `scripts/qa/compatibility.py` checks isolated test data, English and Italian layouts at 411, 380 and 320 dp, and responsive UI. The earlier Android 5 results describe build 10; build 11 requires Android 7.0+.
 
 ## Codemagic
 
